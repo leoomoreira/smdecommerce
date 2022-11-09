@@ -17,7 +17,7 @@
     if (produto != null) {
         NumberFormat numberFormat = new DecimalFormat ("#,##0.00", new DecimalFormatSymbols (new Locale ("pt", "BR")));
 %>
-<form action="UploadFotoProduto" method="post" enctype="multipart/form-data">
+<form action="AlterarProduto" method="post" enctype="multipart/form-data">
     <input type="hidden" name="id" value="<%= produto.getId() %>" />
     <div class="form-group mt-2 mb-2">
         <label for="inputDescricao" class="mb-2">Descrição</label>

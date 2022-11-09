@@ -45,7 +45,7 @@
                         <div class="collapse navbar-collapse" id="navbarToggler01"> 
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<%= (administrador) ? "VerPerfilAdministrador" : "VerPerfilCliente" %>">Perfil</a>
+                                    <a class="nav-link" href="VerPerfil">Perfil</a>
                                 </li>
                                 <%
                                     if (administrador) {

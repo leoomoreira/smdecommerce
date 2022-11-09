@@ -17,8 +17,12 @@
         <servlet-class>inicio.InicioServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>VerPerfilClienteServlet</servlet-name>
-        <servlet-class>usuario.controle.VerPerfilClienteServlet</servlet-class>
+        <servlet-name>VerPerfilServlet</servlet-name>
+        <servlet-class>usuario.controle.VerPerfilServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AlterarPerfilServlet</servlet-name>
+        <servlet-class>usuario.controle.AlterarPerfilServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>AdicionarCarrinhoProdutoServlet</servlet-name>
@@ -61,9 +65,13 @@
         <url-pattern>/InserirNovoCliente</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>VerPerfilClienteServlet</servlet-name>
-        <url-pattern>/VerPerfilCliente</url-pattern>
+        <servlet-name>VerPerfilServlet</servlet-name>
+        <url-pattern>/VerPerfil</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AlterarPerfilServlet</servlet-name>
+        <url-pattern>/AlterarPerfil</url-pattern>
+    </servlet-mapping>    
     <servlet-mapping>
         <servlet-name>AdicionarCarrinhoProdutoServlet</servlet-name>
         <url-pattern>/AdicionarCarrinhoProduto</url-pattern>

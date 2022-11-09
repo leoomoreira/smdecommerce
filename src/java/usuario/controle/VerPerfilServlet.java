@@ -11,9 +11,9 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Leonardo Oliveira Moreira
  * 
- * lasse que implementa a ação de mostrar o perfil do cliente
+ * Classe que implementa a ação de mostrar o perfil de um usuário
  */
-public class VerPerfilClienteServlet extends HttpServlet {
+public class VerPerfilServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POSTI</code>
@@ -27,7 +27,7 @@ public class VerPerfilClienteServlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/cliente/perfil.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/perfil.jsp");
         dispatcher.forward(request, response);
     }
 
